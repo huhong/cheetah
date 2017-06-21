@@ -1,4 +1,4 @@
-class CheetahException < Exception
+class CheetahException < StandardError
 end
 
 class CheetahMessagingException < CheetahException
