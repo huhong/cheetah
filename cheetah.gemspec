@@ -22,5 +22,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rspec'
   s.add_development_dependency 'fakeweb'
 
-  s.add_runtime_dependency 'system_timer'
+  if RUBY_VERSION < "1.9"
+    s.add_runtime_dependency 'system_timer'
+  end
 end
